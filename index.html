@@ -8,26 +8,19 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <script src="bower_components/moment/min/moment.min.js"></script>
-    <title>Alarm Clock!</title>
-  </head>
-  <body>
-    <div class = "current">
-      <h1 id = "time"></h1>
-    </div>
+    <title>Weather</title>
+    </head>
+    <body>
+      <div class="container">
+        <h1>Get Weather Conditions From Anywhere!</h1>
+        <label for="location">Enter a location:</label>
+        <input id="location" type="text">
+        <button class="btn-success" id="weatherLocation">Get Current Humidity!</button>
+        <div class="showCity"></div>
+        <div class="showWeather"></div>
+        <div class="showTemp "></div>
 
-      <div class="alarm">
 
-      <form class = "alarmSet">
-        <label>Set the alarm</label>
-        <input class = "alarmTime" type="time">
-        <button type="submit" name="button">Click here</button>
-      </form>
-      <br>
-      <button class = "snooze">Snooze</button>
-      <br>
-      <input type="button" value="Turn off alarm" onClick="window.location.reload()">
-      <br>
-      <div class = "printOut"></div>
-    </div>
-  </body>
-</html>
+      </div>
+    </body>
+  </html>
